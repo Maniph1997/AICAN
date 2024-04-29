@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../ClassComponent/Classes.css"
-import { Link } from "react-router-dom";
+
+import { NavLink } from "react-router-dom"
 
 
 
@@ -35,9 +36,23 @@ const Tech = () => {
 
     return (
         <div>
+            <div className="Header">
+            <h1>School Management App</h1>
+            <div className="list">
+                <ul>
+
+                    <li><NavLink to="/">Classes-Details</NavLink></li>
+                    <li><NavLink to="/student">Students-Details</NavLink></li>
+                    <li><NavLink to="/teacher">Teachers-Details</NavLink></li>
+                </ul>
+            </div>
+
+
+
+        </div>
             <div className="addUser">
                 {/* <Link to={"/"}>Back </Link> */}
-                <h4><Link to="/">Back</Link></h4>
+                {/* <h4><Link to="/">Back</Link></h4> */}
                 <h3>Teachers Details</h3>
 
                 {/* <h3>Add New Class</h3> */}

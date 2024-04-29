@@ -16,10 +16,14 @@ function App() {
       {/* <Classes />
       <Student /> */}
       {/* <Home /> */}
-      <Home />
+      {/* <Home /> */}
+      {/* <Classes/> */}
+      {/* <Student/> */}
+      {/* <Tech/> */}
+      
 
       <Routes>
-        <Route path='/class' element={<Classes />} />
+        <Route path='/' element={<Classes />} />
         <Route path='/student' element={<Student />} />
         <Route path='/teacher' element={<Tech />} />
 
